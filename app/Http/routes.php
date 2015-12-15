@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => 'v5'], function () {
+    Route::get('articles', 'IndexController@index');
+    Route::post('users', 'UserController@store');
+});
