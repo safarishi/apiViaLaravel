@@ -7,6 +7,7 @@ use League\OAuth2\Server\Exception\InvalidRequestException;
 
 class ApiController extends Controller
 {
+
     protected $authorizer;
 
     protected $accessToken;
@@ -26,4 +27,5 @@ class ApiController extends Controller
             // do nothing or todo
         }
     }
+
 }

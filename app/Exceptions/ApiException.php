@@ -84,4 +84,5 @@ class ApiException extends Exception
         // @codeCoverageIgnoreEnd
         return $headers;
     }
+
 }
